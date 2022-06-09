@@ -1,0 +1,64 @@
+<!-- Start Notificação de Escassez -->
+<a href="#"><img name="misto" id="prova-social" src="https://playpremiado.com/wp-content/uploads/2022/06/npp-1.png" class="img-responsive" style="display: ;"></a>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.5.0/jquery.min.js" integrity="sha256-xNzN2a4ltkB44Mc/Jz3pT4iU1cmeR0FkXs4pru/JxaQ=" crossorigin="anonymous"></script>
+
+<style>#prova-social{position: fixed; bottom: 2%; left: 2%; z-index: 135;}</style>
+
+<script type="text/javascript">
+	$('#prova-social').hide();
+    var $doc = $('html, body');
+    $('.deslisar').click(function() {
+        $doc.animate({
+            scrollTop: $( $.attr(this, 'href') ).offset().top
+        }, 2000);
+        return false;
+    });
+
+    var nrImagem = 0;
+    var imagens = [];
+    var refrescar = 15;
+    
+    imagens[0] = "https://playpremiado.com/wp-content/uploads/2022/06/npp-1.png";
+    imagens[1] = "https://playpremiado.com/wp-content/uploads/2022/06/npp-2.png";
+    imagens[2] = "https://playpremiado.com/wp-content/uploads/2022/06/npp-3.png";
+    imagens[3] = "https://playpremiado.com/wp-content/uploads/2022/06/npp-4.png";
+    imagens[4] = "https://playpremiado.com/wp-content/uploads/2022/06/npp-5.png";
+    imagens[5] = "https://playpremiado.com/wp-content/uploads/2022/06/npp-6.png";
+    imagens[6] = "https://playpremiado.com/wp-content/uploads/2022/06/npp-7.png";
+    imagens[7] = "https://playpremiado.com/wp-content/uploads/2022/06/npp-8.png";
+    imagens[8] = "https://playpremiado.com/wp-content/uploads/2022/06/npp-9.png";
+    imagens[9] = "https://playpremiado.com/wp-content/uploads/2022/06/npp-10.png";
+    imagens[10] = "https://playpremiado.com/wp-content/uploads/2022/06/npp-11.png";
+    imagens[11] = "https://playpremiado.com/wp-content/uploads/2022/06/npp-12.png";
+    imagens[12] = "https://playpremiado.com/wp-content/uploads/2022/06/npp-13.png";
+    imagens[13] = "https://playpremiado.com/wp-content/uploads/2022/06/npp-14.png";
+    imagens[14] = "https://playpremiado.com/wp-content/uploads/2022/06/npp-15.png";
+	imagens[15] = "https://playpremiado.com/wp-content/uploads/2022/06/npp-16.png";
+	imagens[16] = "https://playpremiado.com/wp-content/uploads/2022/06/npp-17.png";
+	imagens[17] = "https://playpremiado.com/wp-content/uploads/2022/06/npp-18.png";
+	imagens[18] = "https://playpremiado.com/wp-content/uploads/2022/06/npp-19.png";
+	imagens[19] = "https://playpremiado.com/wp-content/uploads/2022/06/npp-20.png";
+	imagens[20] = "https://playpremiado.com/wp-content/uploads/2022/06/npp-21.png";
+	imagens[21] = "https://playpremiado.com/wp-content/uploads/2022/06/npp-22.png";
+	imagens[22] = "https://playpremiado.com/wp-content/uploads/2022/06/npp-23.png";
+	imagens[23] = "https://playpremiado.com/wp-content/uploads/2022/06/npp-24.png";
+	imagens[24] = "https://playpremiado.com/wp-content/uploads/2022/06/npp-25.png";
+	imagens[25] = "https://playpremiado.com/wp-content/uploads/2022/06/npp-26.png";
+	imagens[26] = "https://playpremiado.com/wp-content/uploads/2022/06/npp-27.png";
+	imagens[27] = "https://playpremiado.com/wp-content/uploads/2022/06/npp-28.png";
+	imagens[28] = "https://playpremiado.com/wp-content/uploads/2022/06/npp-29.png";
+	imagens[29] = "https://playpremiado.com/wp-content/uploads/2022/06/npp-30.png";
+
+	function rodarImagens() {
+        setTimeout(function(){  $('#prova-social').fadeIn(1000); }, 3000);
+        setTimeout(function(){  $('#prova-social').fadeOut(1000); }, 10000);
+        document.images["misto"].src = imagens[nrImagem++];
+
+        if (nrImagem >= imagens.length)
+            nrImagem = 0;
+
+        setTimeout("rodarImagens()", refrescar * 1000);
+    }
+    rodarImagens();
+</script>
+<!-- End Notificação de Escassez -->
